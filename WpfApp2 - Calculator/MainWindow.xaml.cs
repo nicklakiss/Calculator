@@ -84,5 +84,6 @@ namespace WpfApp2___Calculator
         {
             if (e.LeftButton == MouseButtonState.Pressed) DragMove();
         }
+        //End
     }
 }

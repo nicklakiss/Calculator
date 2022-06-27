@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WpfApp2___Calculator</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="3HeE.gif" />
+    <None Remove="icons8-xbox-x-30.png" />
+    <None Remove="icons8-xbox-x-60.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="3HeE.gif" />
+    <Resource Include="icons8-xbox-x-30.png" />
+    <Resource Include="icons8-xbox-x-60.png" />
+  </ItemGroup>
+
+</Project>

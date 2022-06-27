@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="BlackBackgroundClasicColor">#FF000000</Color>
+    <Color x:Key="WhiteForegroundClasicColor">#FFFFFF</Color>
+    <Color x:Key="WhiteBackgroundClasicColor">#FFFFFF</Color>
+    <Color x:Key="BlackForegroundClasicColor">#FF000000</Color>
+
+    <SolidColorBrush x:Key="BackgroundBlackClasicBrush" Color="{StaticResource BlackBackgroundClasicColor}"/>
+    <SolidColorBrush x:Key="ForegroundWhiteClasicBrush" Color="{StaticResource WhiteForegroundClasicColor}"/>
+    <SolidColorBrush x:Key="BorderClasicBrush" Color="{StaticResource BlackForegroundClasicColor}"/>
+    <SolidColorBrush x:Key="BackgroundWhiteCLasicBrush" Color="{StaticResource WhiteBackgroundClasicColor}"/>
+    <SolidColorBrush x:Key="ForegroundBlackClasicBrush" Color="{StaticResource BlackForegroundClasicColor}"/>
+    <SolidColorBrush x:Key="BorderBlackWhiteClasicBrush" Color="{StaticResource BlackBackgroundClasicColor}"/>
+
+    <Style x:Key="ButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlackClasicBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundWhiteClasicBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBlackWhiteClasicBrush}"/>
+    </Style>
+
+    <Style x:Key="RadioButtonStyle" TargetType="RadioButton" BasedOn="{StaticResource RadioButtonStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlackClasicBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundWhiteClasicBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderBlackWhiteClasicBrush}"/>
+    </Style>
+
+    <Style x:Key="WrapPanelStyle" TargetType="WrapPanel" BasedOn="{StaticResource WrapPanelStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlackClasicBrush}"/>
+    </Style>
+
+    <Style x:Key="WindowStyle" TargetType="Window" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlackClasicBrush}"/>
+    </Style>
+
+    <Style x:Key="TextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundWhiteCLasicBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBlackClasicBrush}"/>
+    </Style>
+</ResourceDictionary>

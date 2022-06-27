@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="YellowBackgroundUkraineColor">#FFFFFF00</Color>
+    <Color x:Key="BlueForegroundUkraineColor">#FF0000FF</Color>
+    <Color x:Key="BlueBackgroundUkraineColor">#FF0000FF</Color>
+    <Color x:Key="YellowForegroundUkraineColor">#FFFFFF00</Color>
+
+    <SolidColorBrush x:Key="BackgroundYellowUkraineBrush" Color="{StaticResource YellowBackgroundUkraineColor}"/>
+    <SolidColorBrush x:Key="ForegroundBlueUkraineBrush" Color="{StaticResource BlueForegroundUkraineColor}"/>
+    <SolidColorBrush x:Key="BackgroundBlueUkraineBrush" Color="{StaticResource BlueBackgroundUkraineColor}"/>
+    <SolidColorBrush x:Key="ForegroundYellowUkraineBrush" Color="{StaticResource YellowForegroundUkraineColor}"/>
+    <SolidColorBrush x:Key="BorderUkraineBrush" Color="{StaticResource BlueBackgroundUkraineColor}"/>
+
+    <Style x:Key="ButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundYellowUkraineBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBlueUkraineBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderUkraineBrush}"/>
+    </Style>
+
+    <Style x:Key="RadioButtonStyle" TargetType="RadioButton" BasedOn="{StaticResource RadioButtonStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundYellowUkraineBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource BackgroundYellowUkraineBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderUkraineBrush}"/>
+    </Style>
+
+    <Style x:Key="WrapPanelStyle" TargetType="WrapPanel" BasedOn="{StaticResource WrapPanelStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlueUkraineBrush}"/>
+    </Style>
+
+    <Style x:Key="WindowStyle" TargetType="Window" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlueUkraineBrush}"/>
+    </Style>
+
+    <Style x:Key="TextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBlueUkraineBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundYellowUkraineBrush}"/>
+    </Style>
+</ResourceDictionary>
